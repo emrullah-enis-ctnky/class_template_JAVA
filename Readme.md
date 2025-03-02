@@ -1,23 +1,18 @@
-📌 Java'da Sınıf Kullanımı (Calculator App)
+# 📌 Java'da Sınıf Kullanımı (Calculator App)
 
-Bu proje, Java'da sınıf kullanımını göstermek amacıyla hazırlanmış basit bir hesap makinesi uygulamasıdır.
-İki temel dosya içerir:
+Bu proje, **Java'da sınıf kullanımını** göstermek amacıyla hazırlanmış basit bir hesap makinesi uygulamasıdır.
 
-calculatorBase.java → Matematiksel işlemleri içeren sınıf.
+## 📂 Proje Yapısı
 
-Main.java → calculatorBase sınıfını kullanarak işlemleri gerçekleştiren ana sınıf.
-
-📂 Proje Yapısı
-
+```plaintext
 calculator_app/
 ├── calculatorBase.java  # İşlemleri gerçekleştiren sınıf
-└─── Main.java            # Ana çalışma sınıfı
+└── Main.java            # Ana çalışma sınıfı
+```
 
+## 🔹 Sınıf Tanımlama
 
-🔹 Sınıf Tanımlama
-
-calculatorBase sınıfı, dört temel matematiksel işlemi içeren bir Java sınıfıdır.
-
+```java
 public class calculatorBase {
     public int addition(int number1, int number2) {
         return number1 + number2;
@@ -40,13 +35,11 @@ public class calculatorBase {
         }
     }
 }
+```
 
-Bu sınıf toplama, çıkarma, çarpma ve bölme işlemlerini içerir.
+## 🔹 Sınıfın Kullanımı
 
-🔹 Sınıfın Kullanımı
-
-Main sınıfı, calculatorBase sınıfını çağırarak işlemleri gerçekleştirir:
-
+```java
 public class Main {
     public static void main(String[] args) {
         calculatorBase calculator = new calculatorBase();
@@ -58,19 +51,23 @@ public class Main {
         System.out.println(calculator.division(10, 3));
     }
 }
+```
 
-📌 Çıktı Örneği
+## 📌 Çıktı Örneği
 
+```plaintext
 30
 10
 30
 Sayı sıfıra bölünemez!
 0
 3.3333333333333335
+```
 
-📜 Lisans
+## 📜 Lisans
 
-Bu proje GNU Genel Kamu Lisansı (GPL) v3 altında lisanslanmıştır. Detaylar için LICENSE.txt dosyasına göz atabilirsiniz.
+Bu proje **GNU Genel Kamu Lisansı (GPL) v3** altında lisanslanmıştır. Detaylar için **LICENSE.txt** dosyasına göz atabilirsiniz.
 
-✅ Java'da sınıfların nasıl tanımlanacağını ve kullanılacağını öğrenmek isteyenler için basit bir örnek! 🚀
+---
 
+✅ **Java'da sınıfların nasıl tanımlanacağını ve kullanılacağını öğrenmek isteyenler için basit bir örnek!** 🚀
